@@ -29,6 +29,13 @@
 		</dependency>
         </dependencies>
 
+	<scm>
+		<connection>scm:git:git://github.com/fiji/TrakEM2_Archipelago</connection>
+		<developerConnection>scm:git:git@github.com:fiji/TrakEM2_Archipelago</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/fiji/TrakEM2_Archipelago</url>
+	</scm>
+
 	<repositories>
 		<!-- NB: for project parent, in case of partial checkout -->
 		<repository>
