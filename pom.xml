@@ -21,12 +21,10 @@
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>TrakEM2_</artifactId>
-			<version>${trakem2.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>Fiji_Archipelago</artifactId>
-			<version>${Fiji_Archipelago.version}</version>
 		</dependency>
         </dependencies>
 
