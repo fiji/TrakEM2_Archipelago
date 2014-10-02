@@ -26,7 +26,7 @@
 			<groupId>sc.fiji</groupId>
 			<artifactId>Fiji_Archipelago</artifactId>
 		</dependency>
-        </dependencies>
+	</dependencies>
 
 	<ciManagement>
 		<system>Jenkins</system>
