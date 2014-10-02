@@ -26,6 +26,14 @@
 			<groupId>sc.fiji</groupId>
 			<artifactId>Fiji_Archipelago</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>mpicbg</groupId>
+			<artifactId>mpicbg</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
 	</dependencies>
 
 	<ciManagement>
