@@ -28,10 +28,10 @@ import edu.utexas.clm.archipelago.listen.ClusterStateListener;
 import edu.utexas.clm.archipelago.network.client.ArchipelagoClient;
 import ini.trakem2.ControlWindow;
 import ini.trakem2.Project;
+import ini.trakem2.parallel.DefaultExecutorProvider;
+import ini.trakem2.parallel.ExecutorProvider;
 import ini.trakem2.persistence.FSLoader;
 import ini.trakem2.plugin.TPlugIn;
-import ini.trakem2.parallel.ExecutorProvider;
-import ini.trakem2.parallel.DefaultExecutorProvider;
 import ini.trakem2.utils.Utils;
 
 import java.io.File;

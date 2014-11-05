@@ -2,9 +2,10 @@ package edu.utexas.clm.archipelago.ijsupport.bottle;
 
 import edu.utexas.clm.archipelago.network.MessageXC;
 import edu.utexas.clm.archipelago.network.translation.Bottle;
-import mpicbg.trakem2.align.RegularizedAffineLayerAlignment;
 
 import java.io.IOException;
+
+import mpicbg.trakem2.align.RegularizedAffineLayerAlignment;
 
 /**
  *

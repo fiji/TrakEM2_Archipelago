@@ -19,7 +19,7 @@
 package edu.utexas.clm.archipelago.ijsupport;
 
 import edu.utexas.clm.archipelago.data.DataChunk;
-import mpicbg.models.*;
+import mpicbg.models.AbstractAffineModel2D;
 
 
 public class AbstractAffineModelChunk extends DataChunk<AbstractAffineModel2D<?>>

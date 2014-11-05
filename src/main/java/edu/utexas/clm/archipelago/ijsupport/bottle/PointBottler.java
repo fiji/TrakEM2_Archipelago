@@ -3,10 +3,11 @@ package edu.utexas.clm.archipelago.ijsupport.bottle;
 import edu.utexas.clm.archipelago.network.MessageXC;
 import edu.utexas.clm.archipelago.network.translation.Bottle;
 import edu.utexas.clm.archipelago.network.translation.Bottler;
-import mpicbg.models.Point;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
+
+import mpicbg.models.Point;
 
 /**
  *

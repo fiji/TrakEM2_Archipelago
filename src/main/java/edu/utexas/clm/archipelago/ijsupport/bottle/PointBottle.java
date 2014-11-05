@@ -2,7 +2,6 @@ package edu.utexas.clm.archipelago.ijsupport.bottle;
 
 import edu.utexas.clm.archipelago.network.MessageXC;
 import edu.utexas.clm.archipelago.network.translation.Bottle;
-import mpicbg.models.Point;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -10,6 +9,8 @@ import java.util.IdentityHashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantLock;
+
+import mpicbg.models.Point;
 
 /**
  * A PointBottle to support synchronized point objects across cluster nodes
