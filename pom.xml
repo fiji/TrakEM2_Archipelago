@@ -18,6 +18,30 @@
 	<name>plugins/TrakEM2_Archipelago.jar</name>
 	<description>TrakEM2 Support for Fiji Archipelago</description>
 
+	<scm>
+		<connection>scm:git:git://github.com/trakem2/TrakEM2_Archipelago</connection>
+		<developerConnection>scm:git:git@github.com:trakem2/TrakEM2_Archipelago</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/trakem2/TrakEM2_Archipelago</url>
+	</scm>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.imagej.net/job/TrakEM2_Archipelago/</url>
+	</ciManagement>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+		<!-- NB: for JAI -->
+		<repository>
+			<id>JBoss 3rdparty</id>
+			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>sc.fiji</groupId>
@@ -36,30 +60,5 @@
 			<artifactId>ij</artifactId>
 		</dependency>
 	</dependencies>
-
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/job/TrakEM2_Archipelago/</url>
-	</ciManagement>
-
-	<scm>
-		<connection>scm:git:git://github.com/trakem2/TrakEM2_Archipelago</connection>
-		<developerConnection>scm:git:git@github.com:trakem2/TrakEM2_Archipelago</developerConnection>
-		<tag>HEAD</tag>
-		<url>https://github.com/trakem2/TrakEM2_Archipelago</url>
-	</scm>
-
-	<repositories>
-		<!-- NB: for project parent -->
-		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-		</repository>
-		<!-- NB: for JAI -->
-		<repository>
-			<id>JBoss 3rdparty</id>
-			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
-		</repository>
-	</repositories>
 
 </project>
