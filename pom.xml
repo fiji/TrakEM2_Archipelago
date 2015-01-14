@@ -43,10 +43,10 @@
 	</ciManagement>
 
 	<scm>
-		<connection>scm:git:git://github.com/fiji/TrakEM2_Archipelago</connection>
-		<developerConnection>scm:git:git@github.com:fiji/TrakEM2_Archipelago</developerConnection>
+		<connection>scm:git:git://github.com/trakem2/TrakEM2_Archipelago</connection>
+		<developerConnection>scm:git:git@github.com:trakem2/TrakEM2_Archipelago</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/fiji/TrakEM2_Archipelago</url>
+		<url>https://github.com/trakem2/TrakEM2_Archipelago</url>
 	</scm>
 
 	<repositories>
