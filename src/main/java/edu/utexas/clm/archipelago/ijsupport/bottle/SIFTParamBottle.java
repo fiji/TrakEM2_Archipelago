@@ -1,11 +1,10 @@
 package edu.utexas.clm.archipelago.ijsupport.bottle;
 
-import edu.utexas.clm.archipelago.network.MessageXC;
-import edu.utexas.clm.archipelago.network.translation.Bottle;
-
 import java.io.IOException;
 
 import mpicbg.trakem2.align.RegularizedAffineLayerAlignment;
+import edu.utexas.clm.archipelago.network.MessageXC;
+import edu.utexas.clm.archipelago.network.translation.Bottle;
 
 /**
  *
@@ -35,13 +34,13 @@ public class SIFTParamBottle implements Bottle
     private final int maxNumThreads;
     private final boolean regularize;
     private final int regularizerIndex;
-    private final float lambda;
+    private final double lambda;
 
     private final float rod;
     private final boolean clearCache;
     private final int maxNumThreadsSift;
 
-    public SIFTParamBottle(RegularizedAffineLayerAlignment.Param param)
+    public SIFTParamBottle(final RegularizedAffineLayerAlignment.Param param)
     {
         fdSize = param.ppm.sift.fdSize;
         fdBins = param.ppm.sift.fdBins;
@@ -74,7 +73,8 @@ public class SIFTParamBottle implements Bottle
 
     }
 
-    public Object unBottle(MessageXC xc) throws IOException
+    @Override
+    public Object unBottle(final MessageXC xc) throws IOException
     {
         return
                 new RegularizedAffineLayerAlignment.Param(

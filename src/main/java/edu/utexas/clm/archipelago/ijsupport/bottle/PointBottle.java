@@ -1,8 +1,5 @@
 package edu.utexas.clm.archipelago.ijsupport.bottle;
 
-import edu.utexas.clm.archipelago.network.MessageXC;
-import edu.utexas.clm.archipelago.network.translation.Bottle;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.IdentityHashMap;
@@ -11,6 +8,8 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantLock;
 
 import mpicbg.models.Point;
+import edu.utexas.clm.archipelago.network.MessageXC;
+import edu.utexas.clm.archipelago.network.translation.Bottle;
 
 /**
  * A PointBottle to support synchronized point objects across cluster nodes
@@ -103,7 +102,7 @@ public class PointBottle implements Bottle<Point>
         return point == null ? localPoint : point;
     }
 
-    private final float[] w, l;
+    private final double[] w, l;
     private final long id;
     private final boolean fromOrigin;
 
@@ -113,12 +112,12 @@ public class PointBottle implements Bottle<Point>
      * @param isOrigin true if we're bottling from the root-node perspective, false if from the
      *                 client-node perspective.
      */
-    public PointBottle(final Point point, boolean isOrigin)
+    public PointBottle(final Point point, final boolean isOrigin)
     {
         // This constructor should only be called from PointBottler.bottle, which is sync'ed.
 
         // Assume identityHashCode does not change for a given Object
-        int idHash = System.identityHashCode(point);
+        final int idHash = System.identityHashCode(point);
 
         w = point.getW();
         l = point.getL();
@@ -160,6 +159,7 @@ public class PointBottle implements Bottle<Point>
         }
     }
 
+    @Override
     public Point unBottle(final MessageXC xc)
     {
 
@@ -200,7 +200,7 @@ public class PointBottle implements Bottle<Point>
     {
         if (from != null && to != from)
         {
-            final float[] wTo = to.getW(), wFrom = from.getW(),
+            final double[] wTo = to.getW(), wFrom = from.getW(),
                     lTo = to.getL(), lFrom = from.getL();
 
             for (int j = 0; j < wTo.length; ++j)
