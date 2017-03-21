@@ -23,6 +23,7 @@ public class SIFTParamBottle implements Bottle
     private final int minNumInliers;
     private final int expectedModelIndex;
     private final boolean multipleHypotheses;
+    private final boolean widestSetOnly;
     private final boolean rejectIdentity;
     private final float identityTolerance;
     private final int maxNumNeighbors;
@@ -57,6 +58,7 @@ public class SIFTParamBottle implements Bottle
         minNumInliers = param.minNumInliers;
         expectedModelIndex = param.expectedModelIndex;
         multipleHypotheses = param.multipleHypotheses;
+        widestSetOnly = param.widestSetOnly;
         rejectIdentity = param.rejectIdentity;
         identityTolerance = param.identityTolerance;
         maxNumNeighbors = param.maxNumNeighbors;
@@ -102,6 +104,7 @@ public class SIFTParamBottle implements Bottle
             minInlierRatio,
             minNumInliers,
             multipleHypotheses,
+            widestSetOnly,
             regularize,
             regularizerIndex,
             rejectIdentity,
