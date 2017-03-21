@@ -87,8 +87,8 @@
 		<url>https://github.com/fiji/TrakEM2_Archipelago/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://jenkins.imagej.net/job/TrakEM2_Archipelago/</url>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/fiji/TrakEM2_Archipelago</url>
 	</ciManagement>
 
 	<properties>
