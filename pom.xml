@@ -11,7 +11,7 @@
 
 	<groupId>sc.fiji</groupId>
 	<artifactId>TrakEM2_Archipelago</artifactId>
-	<version>2.0.3-SNAPSHOT</version>
+	<version>2.0.3</version>
 
 	<name>TrakEM2 Archipelago</name>
 	<description>TrakEM2 Support for Fiji Archipelago</description>
@@ -79,7 +79,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/fiji/TrakEM2_Archipelago</connection>
 		<developerConnection>scm:git:git@github.com:fiji/TrakEM2_Archipelago</developerConnection>
-		<tag>HEAD</tag>
+		<tag>TrakEM2_Archipelago-2.0.3</tag>
 		<url>https://github.com/fiji/TrakEM2_Archipelago</url>
 	</scm>
 	<issueManagement>
